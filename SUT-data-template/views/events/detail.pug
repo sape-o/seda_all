@@ -10,24 +10,24 @@ block content
       .column.is-12
         .event-box
           p
-            strong Name :
-          p Name
+            strong Name :-- #{event.name}
+          p 
     .columns
       .column.is-12
         .event-box
           p
             strong Description :
-          p Description
+          p= event.description
     .columns
       .column.is-12
         .event-box
           p
             strong Location :
-          p Location
+          p= event.location
     .columns
       .column.is-12
         .field.is-grouped.is-grouped-centered
           p.control
             button.button.is-danger.is-delete Delete
           p.control
-            a(href='', class='button is-info') Edit
+            a(href='/events/'+event._id+'/edit', class='button is-info') Edit

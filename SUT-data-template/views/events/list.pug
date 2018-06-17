@@ -9,5 +9,6 @@ block content
     each event in events
       .columns
         .card.column.is-12
-          span Event Name 
-          a(class='button', href='') Detail
+          span= event.name
+          a(class='button', href='/events/'+event._id) Detail
+          
