@@ -28,6 +28,7 @@ block content
       .column.is-12
         .field.is-grouped.is-grouped-centered
           p.control
-            button.button.is-danger.is-delete Delete
+            button(class='button is-danger is-delete', data-id=event._id) DElete
+        
           p.control
             a(href='/events/'+event._id+'/edit', class='button is-info') Edit

@@ -1,3 +1,4 @@
+
 $(function() {
   $('.is-delete').on('click', function() {
     $.ajax({
